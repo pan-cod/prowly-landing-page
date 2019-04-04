@@ -1,0 +1,16 @@
+{
+  "generator-chisel": {
+    "config": {
+      "name": "Prowly Landing Page",
+      "author": "pan-cod",
+      "projectType": "fe",
+      "nameSlug": "prowly-landing-page",
+      "nameCamel": "ProwlyLandingPage",
+      "chiselVersion": "0.15.0",
+      "has_jquery": false
+    },
+    "pages": [
+      "Homepage"
+    ]
+  }
+}

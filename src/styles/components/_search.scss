@@ -1,0 +1,13 @@
+.c-search__input {
+  padding: 1.125em 0 1.125em 0.96875em;
+  border: 1px solid $color-border;
+  background: $color-white;
+  box-shadow: 0 0 40px 0 rgba(223, 228, 232, 0.51);
+  border-radius: 6px;
+  width: 20em;
+}
+
+.c-search__input::placeholder {
+  font-size: 1.125rem;
+  color: $color-very-light-grey;
+}
