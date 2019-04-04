@@ -12,4 +12,7 @@
   margin-left: auto;
   max-width: 52.125em;
   text-align: center;
+  @include bp-down(large) {
+    padding: 1em;
+  }
 }

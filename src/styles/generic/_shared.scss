@@ -12,7 +12,6 @@
  */
 
 address,
-h1, h2, h3, h4, h5, h6,
 blockquote, p, pre,
 dl, ol, ul,
 figure,
@@ -22,6 +21,9 @@ fieldset {
   // margin-bottom: 1.3rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #212B35;
+}
 
 /**
  * Consistent indentation for lists.

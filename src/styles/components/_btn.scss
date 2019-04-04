@@ -27,6 +27,8 @@
   transition: $global-transition;
   border-radius: $global-radius;
   text-transform: capitalize;
+  font-weight: 500;
+  margin: 0 0.8125em;
 }
 
 /* Style variants
@@ -46,6 +48,7 @@
   &:hover,
   &:focus {
     background-color: $color-hover;
+    color: $color-black;
   }
 }
 

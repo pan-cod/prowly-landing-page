@@ -1,0 +1,31 @@
+.c-result {
+  margin: 1.125em auto 5em;
+  padding: 1.375rem 0.9375em;
+  list-style: none;
+  border: 1px solid $color-border;
+  box-shadow: $global-shadow;
+  border-radius: $global-radius;
+  width: 20em;
+}
+
+.c-result__item {
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: $color-medium-grey;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.c-result__item:last-child {
+  margin-bottom: 0;
+}
+
+.c-result__img {
+  height: 3.125em;
+  width: 3.125em;
+}
+
+.c-result__details {
+  margin-left: 0.75em;
+}
