@@ -7,11 +7,11 @@
 }
 
 .c-section__button:hover path {
-    // animation-play-state: paused;
-    fill: $color-prowly;
+  // animation-play-state: paused;
+  fill: $color-prowly;
 }
 
 .c-section__button:hover + svg g path {
-    // animation-play-state: paused;
-    stroke: $color-prowly;
+  // animation-play-state: paused;
+  stroke: $color-prowly;
 }

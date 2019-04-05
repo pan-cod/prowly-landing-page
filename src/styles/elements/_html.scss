@@ -36,8 +36,16 @@ html {
     font-size: 1em; /* 16px */
   }
 
-  // @include bp(full) {
-  //   font-size: 1em; /* 16px */
-  // }
+  @include bp(full) {
+    font-size: 1.125em; /* 18px */
+  }
+
+  @include bp(fullhd) {
+    font-size: 1.375em; /* 22px */
+  }
+
+  @include bp(qhd) {
+    font-size: 1.8em; /* 28.8px */
+  }
 }
 

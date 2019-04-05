@@ -11,8 +11,7 @@ $global-shadow: 0 0 40px 0 rgba(223, 228, 232, 0.51) !default;
 /* Fonts
    ========================================================================== */
 
-$font-sans-serif: 'Roboto',
-sans-serif !default;
+$font-sans-serif: 'Roboto', sans-serif !default;
 
 /* Breakpoints
    ========================================================================== */
@@ -22,6 +21,8 @@ medium: 768px,
 large: 1024px,
 xlarge: 1280px,
 full: 1600px,
+fullhd: 1920px,
+qhd: 2560px,
 );
 
 
@@ -36,7 +37,7 @@ $color-light-grey: #dfe4e8;
 $color-medium-grey: #919eab;
 $color-dark-grey: #333;
 $color-prowly: #614dff;
-$color-prowly-headings: #212B35;
+$color-prowly-headings: #212b35;
 
 // Text
 $color-bg: $color-white;
