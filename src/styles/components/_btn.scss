@@ -17,18 +17,23 @@
  */
 
 .c-btn {
-  display: inline-block; /* [1] */
-  vertical-align: middle; /* [2] */
-  font: inherit; /* [3] */
-  text-align: center; /* [4] */
-  margin: 0; /* [4] */
-  cursor: pointer; /* [5] */
+  display: inline-block;
+  /* [1] */
+  vertical-align: middle;
+  /* [2] */
+  font: inherit;
+  /* [3] */
+  text-align: center;
+  /* [4] */
+  cursor: pointer;
+  /* [5] */
   padding: 0.5rem 1rem;
   transition: $global-transition;
   border-radius: $global-radius;
   text-transform: capitalize;
+  font-size: 1.125em;
   font-weight: 500;
-  margin: 0 0.8125em;
+  line-height: 1.16667em;
 }
 
 /* Style variants
@@ -41,14 +46,14 @@
   &:hover,
   &:active,
   &:focus {
-    text-decoration: none; /* [4] */
+    text-decoration: none;
+    /* [4] */
     color: $color-white;
   }
 
   &:hover,
   &:focus {
-    background-color: $color-hover;
-    color: $color-black;
+    background-color: $color-prowly-headings;
   }
 }
 
@@ -60,5 +65,47 @@
 }
 
 .c-btn--large {
-  padding: 0.75rem 1.5rem;
+  padding: 1.05556em 0.94445em 1.16667em;
+}
+
+
+/* Animations
+========================================================================== */
+
+.c-btn__animation {
+  box-sizing: content-box;
+  padding: 0 0.6em;
+}
+
+.c-btn__arrow {
+  stroke: $color-prowly-headings;
+  stroke-width: 0.375em;
+  stroke-dasharray: 400;
+  stroke-dashoffset: 400;
+  animation: draw 2s alternate infinite;
+  transition: $global-transition;
+}
+
+.c-btn__arrow-end {
+  stroke: $color-prowly-headings;
+  stroke-width: 0.3125em;
+  stroke-dasharray: 55;
+  stroke-dashoffset: 55;
+  animation: draw2 2s alternate infinite;
+  transition: $global-transition;
+}
+
+.c-btn__strokes {
+  fill: $color-prowly-headings;
+  fill-rule: evenodd;
+  transform-origin: center;
+  transition: $global-transition;
+}
+
+.c-btn__strokes--left {
+  animation: path1 2s alternate infinite;
+}
+
+.c-btn__strokes--right {
+  animation: path2 2s alternate infinite;
 }

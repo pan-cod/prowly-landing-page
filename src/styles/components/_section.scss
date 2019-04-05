@@ -1,7 +1,17 @@
 .c-section__button {
-  display: block;
-  margin: 3.625em 0 0.625em;
+  width: 21.5em;
+  margin: 3.625em auto 0.625em;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.c-section__button:hover path {
+    // animation-play-state: paused;
+    fill: $color-prowly;
+}
+
+.c-section__button:hover + svg g path {
+    // animation-play-state: paused;
+    stroke: $color-prowly;
 }

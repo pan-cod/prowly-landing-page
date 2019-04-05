@@ -1,5 +1,5 @@
 .c-search {
-  margin: 4.125em 0 1.3125em ;
+  margin: 4.125em 0 1.3125em;
 }
 
 .c-search__input {
@@ -12,8 +12,8 @@
 }
 
 .c-search__input:focus {
-  border-color: #614DFF;
-  box-shadow: 0 0 40px 0 rgba(97, 77, 255, 0.51);
+  border-color: rgba(97, 77, 255, 0.41);
+  box-shadow: 0 0 20px 0 rgba(97, 77, 255, 0.51);
   outline: 0;
 }
 
