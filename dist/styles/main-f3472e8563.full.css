@@ -10,7 +10,8 @@
 /* Colors
    ========================================================================== */
 @keyframes path1 {
-  0%, 65% {
+  0%,
+  65% {
     transform: translate(100%, 0) scale(0);
     opacity: 0;
   }
@@ -21,7 +22,8 @@
 }
 
 @keyframes path2 {
-  0%, 65% {
+  0%,
+  65% {
     transform: translate(-100%, 0) scale(0);
     opacity: 0;
   }
@@ -32,10 +34,10 @@
 }
 
 @keyframes draw {
-  from {
+  0% {
     stroke-dashoffset: 400;
   }
-  to {
+  100% {
     stroke-dashoffset: 0;
   }
 }
@@ -583,7 +585,7 @@ fieldset {
  * csswizardry.com/2012/06/single-direction-margin-declarations
  */
 h1, h2, h3, h4, h5, h6 {
-  color: #212B35;
+  color: #212b35;
 }
 
 /**
@@ -704,6 +706,27 @@ html {
   html {
     font-size: 1em;
     /* 16px */
+  }
+}
+
+@media (min-width: 1600px) {
+  html {
+    font-size: 1.125em;
+    /* 18px */
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 1.375em;
+    /* 22px */
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    font-size: 1.8em;
+    /* 28.8px */
   }
 }
 
@@ -1004,7 +1027,7 @@ table {
 }
 
 .c-btn--primary:hover, .c-btn--primary:focus {
-  background-color: #212B35;
+  background-color: #212b35;
 }
 
 /* Size variants
@@ -1025,7 +1048,7 @@ table {
 }
 
 .c-btn__arrow {
-  stroke: #212B35;
+  stroke: #212b35;
   stroke-width: 0.375em;
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
@@ -1034,7 +1057,7 @@ table {
 }
 
 .c-btn__arrow-end {
-  stroke: #212B35;
+  stroke: #212b35;
   stroke-width: 0.3125em;
   stroke-dasharray: 55;
   stroke-dashoffset: 55;
@@ -1043,7 +1066,7 @@ table {
 }
 
 .c-btn__strokes {
-  fill: #212B35;
+  fill: #212b35;
   fill-rule: evenodd;
   transform-origin: center;
   transition: all 300ms ease-in-out;
