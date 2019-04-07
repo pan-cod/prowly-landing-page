@@ -110,9 +110,26 @@ var utils = {
     } else {
       el.className = el.className.replace(new RegExp("(^|\\b)".concat(className.split(' ').join('|'), "(\\b|$)"), 'gi'), ' ');
     }
-  }
-  /* eslint-enable  no-param-reassign */
+  },
 
+  /* eslint-enable  no-param-reassign */
+  debounce: function debounce(fn, time) {
+    var timeout;
+    return function () {
+      var _this = this;
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      var functionCall = function functionCall() {
+        return fn.apply(_this, args);
+      };
+
+      clearTimeout(timeout);
+      timeout = setTimeout(functionCall, time);
+    };
+  }
 };
 /* harmony default export */ var utils_utils = (utils);
 // CONCATENATED MODULE: ./src/scripts/modules/inputFilter.js
@@ -122,18 +139,18 @@ var inputFilter_inputFilter = function inputFilter() {
   var input = document.querySelector('.js-input');
 
   if (input) {
-    input.onkeyup = function () {
+    input.onkeyup = utils_utils.debounce(function () {
       var filter = input.value.toLowerCase();
-      var lis = document.querySelectorAll('.js-input-result');
+      var items = document.querySelectorAll('.js-input-result');
 
-      for (var i = 0; i < lis.length; i += 1) {
-        if (lis[i].innerHTML.toLowerCase().indexOf(filter) > -1) {
-          utils_utils.removeClass(lis[i], 'u-hidden');
+      for (var i = 0; i < items.length; i += 1) {
+        if (items[i].innerText.toLowerCase().indexOf(filter) > -1) {
+          utils_utils.removeClass(items[i], 'u-hidden');
         } else {
-          utils_utils.addClass(lis[i], 'u-hidden');
+          utils_utils.addClass(items[i], 'u-hidden');
         }
       }
-    };
+    }, 500);
   }
 };
 

@@ -4,17 +4,17 @@ const inputFilter = () => {
   const input = document.querySelector('.js-input');
 
   if (input) {
-    input.onkeyup = () => {
+    input.onkeyup = utils.debounce(() => {
       const filter = input.value.toLowerCase();
-      const lis = document.querySelectorAll('.js-input-result');
-      for (let i = 0; i < lis.length; i += 1) {
-        if (lis[i].innerHTML.toLowerCase().indexOf(filter) > -1) {
-          utils.removeClass(lis[i], 'u-hidden');
+      const items = document.querySelectorAll('.js-input-result');
+      for (let i = 0; i < items.length; i += 1) {
+        if (items[i].innerText.toLowerCase().indexOf(filter) > -1) {
+          utils.removeClass(items[i], 'u-hidden');
         } else {
-          utils.addClass(lis[i], 'u-hidden');
+          utils.addClass(items[i], 'u-hidden');
         }
       }
-    };
+    }, 500);
   }
 };
 
