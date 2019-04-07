@@ -1,11 +1,13 @@
 .c-result {
   margin: 1.125em auto 5em;
-  padding: 1.375rem 0.9375em;
+  padding: 1.375rem 0.9375em 0;
   list-style: none;
   border: 1px solid $color-border;
   box-shadow: $global-shadow;
   border-radius: $global-radius;
   width: 20em;
+  max-height: 14em;
+  overflow-y: scroll;
 }
 
 .c-result__item {
@@ -17,15 +19,12 @@
   text-align: left;
 }
 
-.c-result__item:last-child {
-  margin-bottom: 0;
-}
-
 .c-result__img {
-  height: 3.125em;
-  width: 3.125em;
+  height: 3.125rem;
+  width: 3.125rem;
+  border-radius: 4px;
 }
 
 .c-result__details {
-  margin-left: 0.75em;
+  margin-left: 0.75rem;
 }
