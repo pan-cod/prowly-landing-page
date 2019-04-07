@@ -36,6 +36,10 @@ html {
     font-size: 1em; /* 16px */
   }
 
+  @include bp(hdpi) {
+    font-size: 1.0625em; /* 17px */
+  }
+
   @include bp(full) {
     font-size: 1.125em; /* 18px */
   }
@@ -45,7 +49,7 @@ html {
   }
 
   @include bp(qhd) {
-    font-size: 1.8em; /* 28.8px */
+    font-size: 1.625em; /* 26px */
   }
 }
 

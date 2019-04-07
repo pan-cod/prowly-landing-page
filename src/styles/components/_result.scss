@@ -1,28 +1,28 @@
 .c-result {
-  margin: 1.125em auto 5em;
-  padding: 1.375rem 0.9375em 0;
-  list-style: none;
   border: 1px solid $color-border;
-  box-shadow: $global-shadow;
   border-radius: $global-radius;
-  width: 20em;
+  box-shadow: $global-shadow;
+  list-style: none;
+  margin: 1.125em auto 5em;
   max-height: 14em;
   overflow-y: scroll;
+  padding: 1.375rem 0.9375em 0;
+  width: 20em;
 }
 
 .c-result__item {
-  font-weight: 400;
-  font-size: 0.875rem;
+  align-items: center;
   color: $color-medium-grey;
   display: flex;
-  align-items: center;
+  font-size: 0.875rem;
+  font-weight: 400;
   text-align: left;
 }
 
 .c-result__img {
+  border-radius: 4px;
   height: 3.125rem;
   width: 3.125rem;
-  border-radius: 4px;
 }
 
 .c-result__details {
